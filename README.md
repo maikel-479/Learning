@@ -1,26 +1,17 @@
-# Blackjack Game
+# Learning
 
-A simple Blackjack game built while following the Scrimba Full Stack Developer course.
+This is where I keep all my projects from the Scrimba Full Stack Developer course. I'm documenting my progress as I go through the curriculum — building things, breaking things, and figuring it out along the way.
 
-## What it does
+## Current Progress
 
-- Start a round of Blackjack
-- Get dealt two cards
-- See your sum and decide if you want to draw another card
-- Try to hit 21 without going over
+| Project | Description | Status |
+|---------|-------------|--------|
+| [Blackjack](black-jack/) | A card game where you try to hit 21 | In progress |
 
-## How to run
-
-1. Open `black-jack/index.html` in your browser
-2. Click the **START GAME** button
-3. Play!
-
-## Tech Stack
+## Tech I'm Learning
 
 - HTML
 - CSS
 - JavaScript
 
-## Status
-
-Work in progress — still following along with the course and adding features as I go.
+More projects coming as I work through the course.
