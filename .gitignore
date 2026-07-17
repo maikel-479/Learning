@@ -1,4 +1,5 @@
 .idea/
 .mimocode/
 .gitignore
-commit-skill.md
+.zed/
+.agents
