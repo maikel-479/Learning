@@ -1,5 +1,5 @@
 .idea/
 .mimocode/
 .gitignore
-.zed/
-.agents
+# .zed/
+.agents/
