@@ -15,8 +15,12 @@ function startGame() {
 }
 
 function renderGame() {
-  // 2. Refer to the cards array when rendering out the cards
-  cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+  cardsEl.textContent = "Cards: "
+  // Create a for loop that renders out all the cards instead of just two
+  for (let i = 0; i < cards.length; i++) {
+    cardsEl.textContent += cards[i] + " "
+  }
+  // cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
   // cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
   sumEl.textContent = "Sum: " + sum
   if (sum <= 20) {
