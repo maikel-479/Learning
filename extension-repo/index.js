@@ -1,23 +1,22 @@
-let myLeads = `["www.awesomelead.com"]`
-
-// 1. Turn the myLeads string into an array
-// 2. Push a new value to the array
-// 3. Turn the array into a string again
-// 4. Console.log the string using typeof to verify that it's a string
-
-let myString = JSON.parse(myLeads)
-myString.push("www.newlead.com")
-let myArray = JSON.stringify(myString)
-console.log(typeof myArray)
-
+let myLeads = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 
+// Get the leads from the localStorage - PS: JSON.parse()
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+// Store it in a variable, leadsFromLocalStorage
+// Log out the variable
+console.log(leadsFromLocalStorage)
+
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     inputEl.value = ""
+    localStorage.setItem("myLeads", JSON.stringify(myLeads) )
     renderLeads()
+
+    // To verify that it works:
+    console.log( localStorage.getItem("myLeads") )
 })
 
 function renderLeads() {
