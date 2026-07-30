@@ -5,3 +5,5 @@
 .agents/
 commit-skill.md
 bash/
+.env
+.env.*
