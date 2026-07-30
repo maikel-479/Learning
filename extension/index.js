@@ -16,10 +16,11 @@ const tabs = [
     {url: "https://www.linkedin.com/in/per-harald-borgen/"}
 ]
 
-// 2. Listen for clicks on tabBtn. Log Per's LinkedIn URL to the console
+// Save the url instead of logging it out
 tabBtn.addEventListener("click", function(){
-  console.log(tabs[0].url)
-  // Is tab[0].url the same as tabs.url? No, tabs is an array of objects, so you need to access the first object in the array (tabs[0]) and then access the url property of that object (tabs[0].url).
+  myLeads.push(tabs[0].url)
+  localStorage.setItem("myLeads", JSON.stringify(myLeads) )
+  render(myLeads)
 })
 
 function render(leads) {
