@@ -185,13 +185,8 @@ a {
 	font-family: 'Poppins', sans-serif;
 }
 .input::-webkit-input-placeholder {
-    color: #666666;
+    color: #555555;
 }
-
-input::placeholder {
-    color: #666666;
-}
-
 .submit-button {
     border: 2px solid #333333;
     padding: 8px 20px;
@@ -233,7 +228,8 @@ input::placeholder {
 
 /*
 Challenge:
-1. Add labels for each input field in the form.
-2. Change the placeholder names to be as accessible and helpful as possible (hint: also make sure the text color contrast is good enough).
-3. Update the button text to be less ambiguous.
+1. Identify any connected consecutive items. Hint: There are multiple sections on our home page that should become 'lists'.
+2. Update the sections to be unordered lists.
+3. Wrap each item with a list item tag.
+4. Finally, add the necessary CSS to maintain the style of the sections.
 */
