@@ -19,6 +19,9 @@ a {
     color: inherit;
     text-decoration: none;
 }
+ul {
+    list-style-type: none;
+}
 .icon {
     font-size: 2rem;
 }
@@ -45,12 +48,6 @@ a {
 }
 .nav-links {
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.nav-link {
-    list-style: none;
 }
 
 /* Hero Section */
@@ -90,7 +87,7 @@ a {
 
 /* Info Section */
 .info-section {
-    margin: 250px auto;
+    margin: 250px auto 200px;
     width: 800px;
 }
 .info {
@@ -113,9 +110,6 @@ a {
     justify-content: space-around;
     align-items: center;
     padding: 10px 30px;
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
 }
 .info-image {
     position: absolute;
@@ -130,7 +124,7 @@ a {
     margin-bottom: 0;
 }
 .stat-number {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 20px;
@@ -222,8 +216,6 @@ a {
     padding: 20px 40px;
     width: 800px;
     color: #ffffff;
-    list-style: none;
-    padding-left: 0;
 }
 .social-links p {
     display: inline;
@@ -237,10 +229,28 @@ a {
     align-items: center;
 }
 
+.skip-nav-link {
+    position: absolute;
+    top: 80px;
+    left: -200px;
+    transition: left 0.3s;
+}
+.skip-nav-link:focus {
+    left: 0;
+}
 
 /*
-Challenge: Apply headings correctly throughout the html. Make sure of the following:
-1. There's one h1 heading. No more, no less.
-2. Heading levels are not skipped.
-3. Headings always introduce new content sections. A heading for some content should never be a <p> or a <div>.
+Challenge: Build your very own skip navigation link for our home page!
+
+Requirements:
+1. Its default state should be visually hidden yet accessible to all keyboard users.
+2. It should utilize the transition property.
+
+
+Steps:
+1. In the HTML, place the link inside the nav, above the logo.
+2. Give the link the class 'skip-nav-link'.
+3. Give the main element the id 'main'
+4. Give the skip nav link an href attribute linked to the main section.
+5. Finally, apply your CSS to the class name 'skip-nav-link'.
 */
